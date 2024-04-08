@@ -10,7 +10,7 @@ const VegetableItem = (props) => {
 
   return (
     <div>
-      <span>{props.veg.name} - ${props.veg.price} - Quantity: {props.veg.quantity}</span>
+      <span>{props.veg.name} - Rs-{props.veg.price} - Quantity: {props.veg.quantity}</span>
       <input type="number" value={quantityToBuy} onChange={(e) => setQuantityToBuy(parseInt(e.target.value))} />
       <button onClick={handleBuyClick}>Buy</button>
       <button onClick={() => props.onDelete(props.veg.name)}>Delete</button>
